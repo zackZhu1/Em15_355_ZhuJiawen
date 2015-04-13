@@ -1,0 +1,12 @@
+!SESSION 2015-04-13 20:57:41.818 -----------------------------------------------
+eclipse.buildId=2014.2
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data F:/xup/embedded/lab1/Em_lab1_ZhuJiawen_355/Em_lab1_ZhuJiawen_355.sdk
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-04-13 21:02:13.064
+!MESSAGE Indexed 'mem_test_bsp' (81 sources, 104 headers) in 7.70 sec: 3,291 declarations; 12,213 references; 56 unresolved inclusions; 9 syntax errors; 37 unresolved names (0.24%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-04-13 21:02:21.120
+!MESSAGE Indexed 'mem_test' (3 sources, 29 headers) in 1.69 sec: 1,002 declarations; 1,383 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)

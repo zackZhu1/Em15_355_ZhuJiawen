@@ -1,0 +1,4 @@
+20:58:31 INFO  : Processing command line option -hwspec F:/xup/embedded/lab1/Em_lab1_ZhuJiawen_355/Em_lab1_ZhuJiawen_355.sdk/system_wrapper.hdf.
+21:11:52 INFO  : ps7_init is completed.
+21:11:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:15:57 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

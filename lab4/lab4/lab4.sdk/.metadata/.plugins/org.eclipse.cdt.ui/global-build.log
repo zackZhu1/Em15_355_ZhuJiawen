@@ -1,0 +1,245 @@
+10:31:43 **** Build of project mem_test_bsp ****
+make -k all 
+'Finished building libraries'
+10:31:52 **** Auto Build of project mem_test_bsp ****
+make -k all 
+'Finished building libraries'
+10:31:53 **** Clean-only build of configuration Debug for project mem_test ****
+make clean 
+rm -rf  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o  ./src/memory_config_g.d ./src/memorytest.d ./src/platform.d  mem_test.elf.size  mem_test.elf
+' '
+10:31:54 **** Build of configuration Debug for project mem_test ****
+make all 
+'Building file: ../src/memory_config_g.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.d" -o "src/memory_config_g.o" "../src/memory_config_g.c"
+'Finished building: ../src/memory_config_g.c'
+' '
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mem_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_test_bsp/ps7_cortexa9_0/lib -o "mem_test.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem_test.elf  |tee "mem_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26136	   1136	  14436	  41708	   a2ec	mem_test.elf
+'Finished building: mem_test.elf.size'
+' '
+10:31:59 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp C:/xup/embedded/labs/led_ip/led_ip_1.0 -lp ..\..\..\..\..\led_ip\led_ip_1.0\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+process_begin: CreateProcess(NULL, libgen -hw ../hw_platform_0/system.xml -lp C:/xup/embedded/labs/led_ip/led_ip_1.0 -lp ..\..\..\..\..\led_ip\led_ip_1.0 -pe ps7_cortexa9_0 -log libgen.log system.mss, ...) failed.
+make (e=2): 系统找不到指定的文件。
+
+make: *** [ps7_cortexa9_0/lib/libxil.a] 错误 2
+make: 由于错误目标“all”并未重新创建。
+10:32:00 **** Clean-only build of configuration Debug for project lab4 ****
+make clean 
+rm -rf  ./src/lab4.o  ./src/lab4.d  lab4.elf.size  lab4.elf
+' '
+10:32:01 **** Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:14:4: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+    printf("-- Start of the Program --\r\n");
+    ^
+../src/lab4.c:14:4: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35648	   2176	   8344	  46168	   b458	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+10:32:04 **** Clean-only build of configuration Debug for project TestApp ****
+make clean 
+rm -rf  ./src/lab2.o  ./src/lab2.d  TestApp.elf.size  TestApp.elf
+' '
+10:32:06 **** Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+'Finished building: ../src/lab2.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24012	   1136	  22628	  47776	   baa0	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+10:32:22 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:32:22 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+10:33:05 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:33:06 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+10:33:07 **** Incremental Build of configuration Debug for project mem_test ****
+make all 
+make: Nothing to be done for `all'.
+10:33:28 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:33:29 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+10:33:30 **** Incremental Build of configuration Debug for project mem_test ****
+make all 
+make: Nothing to be done for `all'.
+10:33:40 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+10:33:40 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:34:18 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:34:18 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+10:34:37 **** Build of project standalone_bsp_1 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+10:35:35 **** Clean-only build of configuration Debug for project lab4 ****
+make clean 
+rm -rf  ./src/lab4.o  ./src/lab4.d  lab4.elf.size  lab4.elf
+' '
+10:35:35 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -ID:/lab4/lab4.sdk/standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c:3:19: fatal error: xutil.h: No such file or directory
+ #include "xutil.h"
+                   ^
+compilation terminated.
+make: *** [src/lab4.o] 错误 1
+10:36:44 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -ID:/lab4/lab4.sdk/standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c:3:19: fatal error: xutil.h: No such file or directory
+ #include "xutil.h"
+                   ^
+compilation terminated.
+make: *** [src/lab4.o] 错误 1
+10:36:46 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -ID:/lab4/lab4.sdk/standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c:3:19: fatal error: xutil.h: No such file or directory
+ #include "xutil.h"
+                   ^
+compilation terminated.
+make: *** [src/lab4.o] 错误 1
+10:36:47 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:37:01 **** Clean-only build of configuration Debug for project lab4 ****
+make clean 
+rm -rf  ./src/lab4.o  ./src/lab4.d  lab4.elf.size  lab4.elf
+' '
+10:37:02 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c:4:20: fatal error: led_ip.h: No such file or directory
+ #include "led_ip.h"
+                    ^
+compilation terminated.
+make: *** [src/lab4.o] 错误 1

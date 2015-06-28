@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:30:22 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sun Jun 28 19:58:07 2015
+# Process ID: 5428
+# Log file: D:/lab4/vivado.log
+# Journal file: D:/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:\lab4\lab4.xpr}
+open_bd_design {D:/lab4/lab4.srcs/sources_1/bd/system/system.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M02_AXI] [get_bd_nets led_ip_LED] [get_bd_cells led_ip]
+undo
+save_bd_design

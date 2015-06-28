@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:30:22 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sun Jun 28 20:34:50 2015
+# Process ID: 9616
+# Log file: D:/lab4/vivado.log
+# Journal file: D:/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:\lab4\lab4.xpr}
+report_ip_status -name ip_status 
+open_bd_design {D:/lab4/lab4.srcs/sources_1/bd/system/system.bd}

@@ -1,0 +1,364 @@
+00:37:24 INFO  : Processing command line option -hwspec D:/final3/system_wrapper.hdf.
+00:41:11 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+00:42:05 INFO  : ps7_init is completed.
+00:42:05 INFO  : ps7_post_config is completed.
+00:42:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:43:18 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+00:43:41 INFO  : ps7_init is completed.
+00:43:41 INFO  : ps7_post_config is completed.
+00:43:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:45:03 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+00:45:35 INFO  : ps7_init is completed.
+00:45:35 INFO  : ps7_post_config is completed.
+00:45:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:45:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:47:27 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+00:47:42 INFO  : ps7_init is completed.
+00:47:42 INFO  : ps7_post_config is completed.
+00:47:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:48:02 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+00:48:11 INFO  : ps7_init is completed.
+00:48:12 INFO  : ps7_post_config is completed.
+00:48:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:48:35 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+00:48:46 INFO  : ps7_init is completed.
+00:48:46 INFO  : ps7_post_config is completed.
+00:48:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:49:15 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+00:49:28 INFO  : ps7_init is completed.
+00:49:28 INFO  : ps7_post_config is completed.
+00:49:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:51:58 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+00:52:07 INFO  : ps7_init is completed.
+00:52:07 INFO  : ps7_post_config is completed.
+00:52:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:55:25 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+00:55:36 INFO  : ps7_init is completed.
+00:55:36 INFO  : ps7_post_config is completed.
+00:55:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:01:38 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:01:52 INFO  : ps7_init is completed.
+01:01:52 INFO  : ps7_post_config is completed.
+01:01:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:05:42 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:05:52 INFO  : ps7_init is completed.
+01:05:52 INFO  : ps7_post_config is completed.
+01:05:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:07:03 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:07:15 INFO  : ps7_init is completed.
+01:07:15 INFO  : ps7_post_config is completed.
+01:07:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:09:05 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:09:14 INFO  : ps7_init is completed.
+01:09:14 INFO  : ps7_post_config is completed.
+01:09:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:10:07 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:10:17 INFO  : ps7_init is completed.
+01:10:17 INFO  : ps7_post_config is completed.
+01:10:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:11:23 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:11:38 INFO  : ps7_init is completed.
+01:11:38 INFO  : ps7_post_config is completed.
+01:11:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:12:11 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:12:23 INFO  : ps7_init is completed.
+01:12:23 INFO  : ps7_post_config is completed.
+01:12:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:17:27 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:18:12 INFO  : ps7_init is completed.
+01:18:12 INFO  : ps7_post_config is completed.
+01:18:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:19:01 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:19:55 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:20:08 INFO  : ps7_init is completed.
+01:20:08 INFO  : ps7_post_config is completed.
+01:20:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:22:44 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:22:57 INFO  : ps7_init is completed.
+01:22:57 INFO  : ps7_post_config is completed.
+01:22:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:24:44 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:25:05 INFO  : ps7_init is completed.
+01:25:05 INFO  : ps7_post_config is completed.
+01:25:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:27:46 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:28:10 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:28:25 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:28:36 INFO  : ps7_init is completed.
+01:28:36 INFO  : ps7_post_config is completed.
+01:28:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:28:39 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:32:01 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:32:10 INFO  : ps7_init is completed.
+01:32:10 INFO  : ps7_post_config is completed.
+01:32:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:33:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:34:18 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:34:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:35:01 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:35:14 INFO  : ps7_init is completed.
+01:35:14 INFO  : ps7_post_config is completed.
+01:35:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:36:06 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:36:18 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:36:34 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:36:53 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:37:09 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1153)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:431)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:513)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:252)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+01:37:27 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:37:37 INFO  : ps7_init is completed.
+01:37:37 INFO  : ps7_post_config is completed.
+01:37:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:39:21 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:39:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:39:37 ERROR : Unexpected error while launching program.
+java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.TM.terminateCurrentLaunch(TM.java:895)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:493)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:252)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+01:39:48 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:39:59 INFO  : ps7_init is completed.
+01:39:59 INFO  : ps7_post_config is completed.
+01:39:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:42:08 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:42:23 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:42:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:49:06 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:49:34 INFO  : ps7_init is completed.
+01:49:34 INFO  : ps7_post_config is completed.
+01:49:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:50:41 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:50:51 INFO  : ps7_init is completed.
+01:50:51 INFO  : ps7_post_config is completed.
+01:50:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:51:32 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:51:55 INFO  : ps7_init is completed.
+01:51:55 INFO  : ps7_post_config is completed.
+01:51:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:53:20 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:53:48 INFO  : ps7_init is completed.
+01:53:48 INFO  : ps7_post_config is completed.
+01:53:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:56:40 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:57:08 INFO  : ps7_init is completed.
+01:57:08 INFO  : ps7_post_config is completed.
+01:57:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:01:25 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:01:44 INFO  : ps7_init is completed.
+02:01:44 INFO  : ps7_post_config is completed.
+02:01:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:02:46 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:02:57 INFO  : ps7_init is completed.
+02:02:57 INFO  : ps7_post_config is completed.
+02:02:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:18:02 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:18:12 INFO  : ps7_init is completed.
+02:18:12 INFO  : ps7_post_config is completed.
+02:18:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:20:45 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:20:57 INFO  : ps7_init is completed.
+02:20:57 INFO  : ps7_post_config is completed.
+02:20:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:23:11 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:23:22 INFO  : ps7_init is completed.
+02:23:22 INFO  : ps7_post_config is completed.
+02:23:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:27:32 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:27:42 INFO  : ps7_init is completed.
+02:27:42 INFO  : ps7_post_config is completed.
+02:27:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:29:46 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:30:16 INFO  : ps7_init is completed.
+02:30:16 INFO  : ps7_post_config is completed.
+02:30:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:31:36 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:31:49 INFO  : ps7_init is completed.
+02:31:49 INFO  : ps7_post_config is completed.
+02:31:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:32:34 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+02:32:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:33:02 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+02:33:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:35:45 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:35:57 INFO  : ps7_init is completed.
+02:35:57 INFO  : ps7_post_config is completed.
+02:35:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:38:05 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:38:36 INFO  : ps7_init is completed.
+02:38:36 INFO  : ps7_post_config is completed.
+02:38:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:39:06 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:39:37 INFO  : ps7_init is completed.
+02:39:37 INFO  : ps7_post_config is completed.
+02:39:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:41:34 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:42:02 INFO  : ps7_init is completed.
+02:42:03 INFO  : ps7_post_config is completed.
+02:42:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:43:24 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:43:45 INFO  : ps7_init is completed.
+02:43:45 INFO  : ps7_post_config is completed.
+02:43:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:44:47 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:45:02 INFO  : ps7_init is completed.
+02:45:02 INFO  : ps7_post_config is completed.
+02:45:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:46:19 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:46:29 INFO  : ps7_init is completed.
+02:46:29 INFO  : ps7_post_config is completed.
+02:46:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:56:01 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:56:25 INFO  : ps7_init is completed.
+02:56:25 INFO  : ps7_post_config is completed.
+02:56:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:56:48 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:56:59 INFO  : ps7_init is completed.
+02:56:59 INFO  : ps7_post_config is completed.
+02:56:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:58:02 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:58:21 INFO  : ps7_init is completed.
+02:58:21 INFO  : ps7_post_config is completed.
+02:58:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+03:00:03 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+03:00:17 INFO  : ps7_init is completed.
+03:00:17 INFO  : ps7_post_config is completed.
+03:00:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+03:01:01 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+03:01:24 INFO  : ps7_init is completed.
+03:01:24 INFO  : ps7_post_config is completed.
+03:01:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+03:01:54 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+03:02:23 INFO  : ps7_init is completed.
+03:02:23 INFO  : ps7_post_config is completed.
+03:02:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+03:02:55 INFO  : FPGA configured successfully with bitstream "D:/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+03:03:06 INFO  : ps7_init is completed.
+03:03:06 INFO  : ps7_post_config is completed.
+03:03:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+03:05:57 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+03:06:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+03:06:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+03:06:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+03:11:55 ERROR : Unable to disconnect from existing targets
+java.lang.NullPointerException
+03:11:55 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:30:16 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+14:31:02 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:31:35 INFO  : ps7_init is completed.
+14:31:35 INFO  : ps7_post_config is completed.
+14:31:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:32:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:32:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:37:14 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:37:54 INFO  : ps7_init is completed.
+14:37:55 INFO  : ps7_post_config is completed.
+14:37:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:41:52 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:42:26 INFO  : ps7_init is completed.
+14:42:26 INFO  : ps7_post_config is completed.
+14:42:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:46:14 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:46:48 INFO  : ps7_init is completed.
+14:46:48 INFO  : ps7_post_config is completed.
+14:46:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:50:38 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:51:09 INFO  : ps7_init is completed.
+14:51:09 INFO  : ps7_post_config is completed.
+14:51:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:51:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:51:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:54:27 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:55:31 INFO  : ps7_init is completed.
+14:55:31 INFO  : ps7_post_config is completed.
+14:55:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:55:55 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:55:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:57:05 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:57:17 INFO  : ps7_init is completed.
+14:57:17 INFO  : ps7_post_config is completed.
+14:57:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:58:05 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:58:51 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:59:07 INFO  : ps7_init is completed.
+14:59:08 INFO  : ps7_post_config is completed.
+14:59:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:00:08 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:00:37 INFO  : ps7_init is completed.
+15:00:37 INFO  : ps7_post_config is completed.
+15:00:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:02:47 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:02:59 INFO  : ps7_init is completed.
+15:02:59 INFO  : ps7_post_config is completed.
+15:02:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:04:50 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:05:15 INFO  : ps7_init is completed.
+15:05:15 INFO  : ps7_post_config is completed.
+15:05:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:08:16 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:08:40 INFO  : ps7_init is completed.
+15:08:40 INFO  : ps7_post_config is completed.
+15:08:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:20:55 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:21:23 INFO  : ps7_init is completed.
+15:21:23 INFO  : ps7_post_config is completed.
+15:21:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:22:46 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:23:07 INFO  : ps7_init is completed.
+15:23:07 INFO  : ps7_post_config is completed.
+15:23:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:24:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:24:10 ERROR : Unexpected error while launching program.
+java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.TM.terminateCurrentLaunch(TM.java:895)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:493)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:252)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+15:24:41 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:24:54 INFO  : ps7_init is completed.
+15:24:54 INFO  : ps7_post_config is completed.
+15:24:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:27:26 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+15:28:31 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+15:28:31 ERROR : Timeout occured while waiting to get reply for command "xload hw C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system.hdf"
+15:30:58 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+15:30:58 ERROR : Timeout occured while waiting to get reply for command "xconnect arm hw -cable type xilinx_tcf url TCP:127.0.0.1:3121 -debugdevice cpunr 1"
+15:31:31 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:31:54 INFO  : ps7_init is completed.
+15:31:54 INFO  : ps7_post_config is completed.
+15:31:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:32:43 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:32:58 INFO  : ps7_init is completed.
+15:32:58 INFO  : ps7_post_config is completed.
+15:33:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:34:35 INFO  : FPGA configured successfully with bitstream "C:/Users/user/Desktop/zybo/final3/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:35:01 INFO  : ps7_init is completed.
+15:35:01 INFO  : ps7_post_config is completed.
+15:35:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:36:21 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

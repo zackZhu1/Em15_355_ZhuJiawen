@@ -1,0 +1,190 @@
+13:23:56 INFO  : Processing command line option -hwspec D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf.
+13:36:24 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+13:36:39 INFO  : ps7_init is completed.
+13:36:39 INFO  : ps7_post_config is completed.
+13:36:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:40:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:06:12 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:06:50 INFO  : ps7_init is completed.
+14:06:50 INFO  : ps7_post_config is completed.
+14:06:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:04:17 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:05:04 INFO  : Processing command line option -hwspec D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf.
+19:05:06 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+19:05:25 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1435230212366,  Project:1435036933620
+19:05:25 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf.
+19:05:25 INFO  : Copied contents of D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+19:06:17 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:06:51 INFO  : 
+19:06:52 INFO  : Updating hardware inferred compiler options for TestApp.
+19:06:52 INFO  : Clearing existing target manager status.
+19:06:57 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+19:11:52 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+19:12:20 INFO  : ps7_init is completed.
+19:12:20 INFO  : ps7_post_config is completed.
+19:12:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:18:10 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+19:18:21 INFO  : ps7_init is completed.
+19:18:21 INFO  : ps7_post_config is completed.
+19:18:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:23:12 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+19:23:31 INFO  : ps7_init is completed.
+19:23:31 INFO  : ps7_post_config is completed.
+19:23:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:24:51 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+19:25:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:25:22 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1153)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:431)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:513)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:252)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+19:25:33 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+19:25:43 INFO  : ps7_init is completed.
+19:25:43 INFO  : ps7_post_config is completed.
+19:25:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:44:32 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+19:45:00 INFO  : ps7_init is completed.
+19:45:00 INFO  : ps7_post_config is completed.
+19:45:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:47:35 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:37:51 INFO  : Processing command line option -hwspec D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf.
+09:37:59 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+09:39:44 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1435282584066,  Project:1435230212366
+09:39:44 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf.
+09:39:44 INFO  : Copied contents of D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+09:39:46 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+09:40:42 INFO  : 
+09:40:43 INFO  : Updating hardware inferred compiler options for TestApp.
+09:40:43 INFO  : Clearing existing target manager status.
+09:40:47 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+09:45:28 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+09:46:41 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+09:50:35 INFO  : ps7_init is completed.
+09:50:35 INFO  : ps7_post_config is completed.
+09:50:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:07:05 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:07:15 INFO  : ps7_init is completed.
+10:07:15 INFO  : ps7_post_config is completed.
+10:07:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:09:32 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:10:23 INFO  : ps7_init is completed.
+10:10:23 INFO  : ps7_post_config is completed.
+10:10:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:13:33 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:13:57 INFO  : ps7_init is completed.
+10:13:57 INFO  : ps7_post_config is completed.
+10:13:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:25:09 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:53:10 INFO  : Processing command line option -hwspec D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf.
+10:53:14 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+10:53:36 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1435286746056,  Project:1435282584066
+10:53:36 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf.
+10:53:36 INFO  : Copied contents of D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+11:08:02 INFO  : Processing command line option -hwspec D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf.
+11:08:03 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+11:10:30 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:10:40 INFO  : ps7_init is completed.
+11:10:40 INFO  : ps7_post_config is completed.
+11:10:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:20:04 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:20:10 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:20:24 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1153)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:431)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:513)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:252)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+11:20:33 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:20:53 INFO  : ps7_init is completed.
+11:20:53 INFO  : ps7_post_config is completed.
+11:20:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:38:37 ERROR :  [Hsm 55-1403] D:\xilinx\lab2\lab2.sdk\standalone_bsp_0\system.mss line 191 - No IP instance named sw_4bit present in hardware design
+11:38:37 ERROR :  [Hsm 55-1403] D:\xilinx\lab2\lab2.sdk\standalone_bsp_0\system.mss line 191 - No IP instance named sw_4bit present in hardware design
+ [Hsm 55-1403] D:\xilinx\lab2\lab2.sdk\standalone_bsp_0\system.mss line 191 - No IP instance named sw_4bit present in hardware design
+ [Hsm 55-1430] Driver Name is empty
+11:38:37 ERROR :  [Hsm 55-1403] D:\xilinx\lab2\lab2.sdk\standalone_bsp_0\system.mss line 191 - No IP instance named sw_4bit present in hardware design
+ [Hsm 55-1403] D:\xilinx\lab2\lab2.sdk\standalone_bsp_0\system.mss line 191 - No IP instance named sw_4bit present in hardware design
+11:38:37 ERROR :  [Hsm 55-1403] D:\xilinx\lab2\lab2.sdk\standalone_bsp_0\system.mss line 191 - No IP instance named sw_4bit present in hardware design
+ [Hsm 55-1403] D:\xilinx\lab2\lab2.sdk\standalone_bsp_0\system.mss line 191 - No IP instance named sw_4bit present in hardware design
+11:40:42 ERROR :  [Hsm 55-1403] D:\xilinx\lab2\lab2.sdk\standalone_bsp_0\system.mss line 191 - No IP instance named sw_4bit present in hardware design
+11:40:44 ERROR :  [Hsm 55-1403] D:\xilinx\lab2\lab2.sdk\standalone_bsp_0\system.mss line 191 - No IP instance named sw_4bit present in hardware design
+11:40:44 ERROR :  [Hsm 55-1403] D:\xilinx\lab2\lab2.sdk\standalone_bsp_0\system.mss line 191 - No IP instance named sw_4bit present in hardware design
+11:40:58 ERROR :  [Hsm 55-1403] D:\xilinx\lab2\lab2.sdk\standalone_bsp_0\system.mss line 191 - No IP instance named sw_4bit present in hardware design
+ [Hsm 55-1403] D:\xilinx\lab2\lab2.sdk\standalone_bsp_0\system.mss line 191 - No IP instance named sw_4bit present in hardware design
+11:40:58 ERROR : SDK has detected that project system_wrapper_hw_platform_0 has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project.
+11:42:18 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:43:20 INFO  : Processing command line option -hwspec D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf.
+11:43:21 ERROR : Error occurred while creating hardware platform system_wrapper_hw_platform_0 from sysdef
+org.eclipse.core.internal.resources.ResourceException: Resource '/system_wrapper_hw_platform_0/system.hdf' already exists.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:307)
+	at org.eclipse.core.internal.resources.File.create(File.java:111)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:101)
+	at com.xilinx.sdk.hw.HwProject.internalCreate(HwProject.java:167)
+	at com.xilinx.sdk.hw.HwProject.makeNewHardwareProject(HwProject.java:126)
+	at com.xilinx.sdk.hw.HwProject.makeNewHardwareProject(HwProject.java:113)
+	at com.xilinx.sdk.hw.HwProject.makeNewHardwareProject(HwProject.java:88)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:440)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:422)
+	at com.xilinx.sdk.startup.InitSDK$9.run(InitSDK.java:373)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+11:43:21 ERROR : Unable to create Hardware Specification Project with specification file: D:/xilinx/lab2/lab2.sdk/system_wrapper.hdf
+11:49:14 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:50:37 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:50:49 INFO  : ps7_init is completed.
+11:50:49 INFO  : ps7_post_config is completed.
+11:50:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:53:41 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:53:48 INFO  : ps7_init is completed.
+11:53:48 INFO  : ps7_post_config is completed.
+11:53:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:57:50 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:58:01 INFO  : ps7_init is completed.
+11:58:01 INFO  : ps7_post_config is completed.
+11:58:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:58:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:02:27 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:02:35 INFO  : ps7_init is completed.
+12:02:35 INFO  : ps7_post_config is completed.
+12:02:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:03:46 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:04:05 INFO  : ps7_init is completed.
+12:04:05 INFO  : ps7_post_config is completed.
+12:04:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:05:24 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:06:00 INFO  : ps7_init is completed.
+12:06:00 INFO  : ps7_post_config is completed.
+12:06:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:06:54 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:07:03 INFO  : ps7_init is completed.
+12:07:03 INFO  : ps7_post_config is completed.
+12:07:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:11:47 INFO  : FPGA configured successfully with bitstream "D:/xilinx/lab2/lab2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:11:58 INFO  : ps7_init is completed.
+12:11:58 INFO  : ps7_post_config is completed.
+12:11:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:12:44 INFO  : Processor reset is completed for ps7_cortexa9_0

@@ -1,0 +1,292 @@
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xutil.h"
+#include<stdio.h>
+
+#define bool int
+#define false 0
+#define true 1
+//====================================================
+
+XGpio buttons,switches;
+XGpio latchPin,clockPin,dataPin;
+XGpio led[4];
+int i;
+int j;
+int k;
+int m;
+int ledQueue[5];
+int buttonsQueue[5];
+
+
+//笑脸
+u32 faceData[]={0xc3,0xc3,0x00,0x00,0x18,0x18,0x42,0x3c};
+//爱心
+u32 heartData[]={0x0e,0x1f,0x1f,0x7f,0xff,0xff,0xff,0x7f};
+//3
+u32 threeData[]={0x3c,0x04,0x04,0x3c,0x04,0x04,0x04,0x3c};
+//2
+u32 twoData[]={0x3c,0x04,0x04,0x3c,0x20,0x20,0x20,0x3c};
+//1
+u32 oneData[]={0x08,0x18,0x28,0x08,0x08,0x08,0x08,0x3e};
+//->
+u32 arrowData[]={0x00,0x00,0x04,0x02,0xff,0x02,0x04,0x00};
+//v
+u32 vData[]={0x00,0x00,0x01,0x02,0x04,0x88,0x50,0x20};
+//x
+u32 xData[]={0x81,0x42,0x24,0x18,0x18,0x24,0x42,0x81};
+//clear
+u32 clearData[]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+
+void initialize()
+{
+	//ledArray
+	XGpio_Initialize(&latchPin,XPAR_LATCHPIN_DEVICE_ID);
+	XGpio_SetDataDirection(&latchPin,1,0x00000000);//0是输出
+	XGpio_Initialize(&clockPin,XPAR_CLOCKPIN_DEVICE_ID);
+	XGpio_SetDataDirection(&clockPin,1,0x00000000);//0是输出
+	XGpio_Initialize(&dataPin,XPAR_DATAPIN_DEVICE_ID);
+	XGpio_SetDataDirection(&dataPin,1,0x00000000);//0是输出
+	//buttons
+	XGpio_Initialize(&buttons, XPAR_BTNS_4BIT_DEVICE_ID);
+	XGpio_SetDataDirection(&buttons, 1, 0xffffffff);//1是输入
+	//leds
+	XGpio_Initialize(&led[0],XPAR_LED1_DEVICE_ID);
+	XGpio_SetDataDirection(&led[0],1,0x00000000);//0是输出
+	XGpio_Initialize(&led[1],XPAR_LED2_DEVICE_ID);
+	XGpio_SetDataDirection(&led[1],1,0x00000000);//0是输出
+	XGpio_Initialize(&led[2],XPAR_LED3_DEVICE_ID);
+	XGpio_SetDataDirection(&led[2],1,0x00000000);//0是输出
+	XGpio_Initialize(&led[3],XPAR_LED4_DEVICE_ID);
+	XGpio_SetDataDirection(&led[3],1,0x00000000);
+
+}
+
+void shiftOut(XGpio myDataPin,XGpio myClockPin,u32 myDataOut)
+{
+	int i=0;
+	u32 pinState;
+	XGpio_DiscreteWrite(&myDataPin,1,0x0);
+	XGpio_DiscreteWrite(&myClockPin,1,0x0);
+	for(i=7;i>=0;i--)
+	{
+		XGpio_DiscreteWrite(&myClockPin,1,0x0);
+		if(myDataOut & (1<<i))
+			pinState = 0x1;
+		else
+			pinState = 0x0;
+		XGpio_DiscreteWrite(&myDataPin,1,pinState);
+		XGpio_DiscreteWrite(&myClockPin,1,0x1);
+		XGpio_DiscreteWrite(&myDataPin,1,0x0);
+	}
+	XGpio_DiscreteWrite(&myClockPin,1,0x0);
+}
+
+
+/*
+void disp()
+{
+	for(i=0;i<8;i++)
+	{
+		xil_printf("i %x\r\n", i);
+		for (j=0; j<99999; j++);
+		XGpio_DiscreteWrite(&latchPin,1,0x0);
+		shiftOut(dataPin,clockPin,~(1<<i));
+		shiftOut(dataPin,clockPin,faceData[i]);
+		XGpio_DiscreteWrite(&latchPin,1,0x1);
+	}
+}
+*/
+void disp(u32 inputArray[8])
+{
+	for(i=0;i<8;i++)
+	{
+		//xil_printf("i %x\r\n", i);
+		for (j=0; j<99999; j++);
+		XGpio_DiscreteWrite(&latchPin,1,0x0);
+		shiftOut(dataPin,clockPin,~(1<<i));
+		shiftOut(dataPin,clockPin,inputArray[i]);
+		XGpio_DiscreteWrite(&latchPin,1,0x1);
+	}
+}
+
+
+//-----------------------------------------------------
+void changeState(int x)
+{
+	clear();
+	for(m=0;m<4999999;m++);
+	for(m=0;m<4;m++)
+	{
+		if(m==x)
+			XGpio_DiscreteWrite(&led[m],1,0xffffffff);
+		else
+			XGpio_DiscreteWrite(&led[m],1,0x00000000);
+	}
+}
+
+void clear()
+{
+	for(m=0;m<4;m++)
+	{
+		XGpio_DiscreteWrite(&led[m],1,0x00000000);
+	}
+}
+
+bool isMatch(int ledCount)
+{
+	bool flag= true;
+	for(i=0;i<ledCount;i++)
+	{
+		if(ledQueue[i]!=buttonsQueue[i])
+		{
+			flag=false;
+			break;
+		}
+	}
+	return flag;
+}
+//--------------------------------------------------------
+
+
+int main (void)
+{
+	xil_printf("-- Start of the Program --\r\n");
+	initialize();
+
+	for(k=0;k<50;k++)
+		disp(faceData);
+	for(k=0;k<50;k++)
+		disp(threeData);
+	for(k=0;k<50;k++)
+		disp(twoData);
+	for(k=0;k<50;k++)
+		disp(oneData);
+	disp(clearData);
+
+
+	xil_printf("--Game Start!!! --\r\n");
+	//--------------------------------------------------------
+	int rValue;
+	int ledCount = 0;//灯的循环次数
+	int buttonsCount = 0;//按钮的输入次数
+	int loop = 3;
+	int times = 0;//最多执行3次
+	int psb_check;
+
+	bool success = false;
+	success=true;
+	while(success!=false && times<3)
+	{
+		while(ledCount!=loop)
+		{
+			rValue = rand()%4;
+			changeState(rValue);
+			ledQueue[ledCount]=1<<rValue;
+			xil_printf("ledQueue[ledCount] %d\r\n",ledQueue[ledCount]);
+			for (m=0; m<19999999; m++);
+			ledCount++;
+		}
+		clear();
+		/*
+		while(buttonsCount!=loop)
+		{
+			for (m=0; m<29999999; m++);
+			xil_printf("psb_check  %d\r\n",psb_check);
+			//while(psb_check==0)
+			while(psb_check!=1 && psb_check!=2 && psb_check!=4 && psb_check!=8)
+			{
+				xil_printf("!!!!!!!!!!!!!!!\r\n");
+				psb_check=15-XGpio_DiscreteRead(&buttons,1);
+				xil_printf("???????????????\r\n");
+			}
+			psb_check=15-XGpio_DiscreteRead(&buttons,1);
+			//----//
+			xil_printf("psb_check  %d\r\n",psb_check);
+			//----//
+			if(psb_check!=0)
+			{
+				buttonsQueue[buttonsCount]=psb_check;
+				xil_printf("buttonsQueue[buttonsCount] %d\r\n",buttonsQueue[buttonsCount]);
+				buttonsCount++;
+			}
+			else
+			{
+				psb_check=15-XGpio_DiscreteRead(&buttons,1);
+			}
+			psb_check=0;
+		}
+		*/
+
+		while(buttonsCount!=loop)
+		{
+			for (m=0; m<29999999; m++);
+			xil_printf("psb_check  %d\r\n",psb_check);
+			//while(psb_check==0)
+			while(psb_check==0)
+			{
+				xil_printf("!!!!!!!!!!!!!!!\r\n");
+				psb_check=15-XGpio_DiscreteRead(&buttons,1);
+				xil_printf("???????????????\r\n");
+			}
+			psb_check=15-XGpio_DiscreteRead(&buttons,1);
+			//----//
+			xil_printf("psb_check  %d\r\n",psb_check);
+			//----//
+			if(psb_check!=0)
+			{
+				buttonsQueue[buttonsCount]=psb_check;
+				xil_printf("buttonsQueue[buttonsCount] %d\r\n",buttonsQueue[buttonsCount]);
+				buttonsCount++;
+			}
+			else
+			{
+				psb_check=15-XGpio_DiscreteRead(&buttons,1);
+			}
+			psb_check=0;
+		}
+
+
+
+		int result = isMatch(ledCount);
+		if(result == true)
+		{
+			xil_printf("success \r\n");
+			success = true;
+			ledCount = 0;
+			buttonsCount = 0;
+			loop += 3;
+			times++;
+		}
+		else if(result == false)
+		{
+			xil_printf("failed \r\n");
+			success = false;
+			//break;
+		}
+	}
+
+
+
+	xil_printf("............\r\n");
+	if(success == false)
+	{
+		xil_printf("Game Over\r\n");
+		while(1)
+		{
+			disp(xData);
+		}
+	}
+	else
+	{
+		xil_printf("Congralutions\r\n");
+		while(1)
+		{
+			disp(vData);
+		}
+	}
+
+
+
+}
+

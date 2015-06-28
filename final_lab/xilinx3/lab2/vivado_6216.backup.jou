@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2013.3
+# SW Build 329390 on Wed Oct 16 18:35:21 MDT 2013
+# IP Build 192953 on Wed Oct 16 08:44:02 MDT 2013
+# Start of session at: Tue Apr 22 21:33:56 2014
+# Process ID: 4924
+# Log file: E:/比赛/ZYBO/zybo官方实验/zybo2-Embedded System Design Flow on Zynq/labsolution/lab2/vivado.log
+# Journal file: E:/比赛/ZYBO/zybo官方实验/zybo2-Embedded System Design Flow on Zynq/labsolution/lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:\比赛\ZYBO\zybo官方实验\zybo2-Embedded System Design Flow on Zynq\labsolution\lab2\lab2.xpr}
+export_hardware [get_files {{E:/比赛/ZYBO/zybo官方实验/zybo2-Embedded System Design Flow on Zynq/labsolution/lab2/lab2.srcs/sources_1/bd/system/system.bd}}]
+open_hw

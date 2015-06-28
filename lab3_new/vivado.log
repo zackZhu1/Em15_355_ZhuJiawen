@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:30:22 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sun Jun 28 20:19:06 2015
+# Process ID: 2732
+# Log file: F:/gitbox1/lab3_new/vivado.log
+# Journal file: F:/gitbox1/lab3_new\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:\gitbox1\lab3_new\lab3_new.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/LINUX_TEST/lab3_new' since last save.
+WARNING: [filemgmt 20-922] The BXML file is of a newer version (0.31) then the current supported version (0.29).
+Data could be potentially be lost
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 20-922] The BXML file is of a newer version (0.31) then the current supported version (0.29).
+Data could be potentially be lost
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2014.2/data/ip'.
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_axi_gpio_0_0 and its definition xilinx.com:ip:axi_gpio:2.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_processing_system7_0_axi_periph_0 and its definition xilinx.com:ip:axi_interconnect:2.1
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_rst_processing_system7_0_100M_0 and its definition xilinx.com:ip:proc_sys_reset:5.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_axi_gpio_0_1 and its definition xilinx.com:ip:axi_gpio:2.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_axi_bram_ctrl_0_0 and its definition xilinx.com:ip:axi_bram_ctrl:4.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_axi_bram_ctrl_0_bram_0 and its definition xilinx.com:ip:blk_mem_gen:8.2
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP system_xbar_0 and its definition xilinx.com:ip:axi_crossbar:2.1
+WARNING: [BD 41-1303] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 853.770 ; gain = 63.195
+report_ip_status -name ip_status 
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 28 20:20:48 2015...

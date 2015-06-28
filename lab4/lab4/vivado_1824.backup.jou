@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:30:22 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sun Jun 28 10:26:08 2015
+# Process ID: 6680
+# Log file: D:/lab4/vivado.log
+# Journal file: D:/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:\lab4\lab4.xpr}
+update_compile_order -fileset sim_1
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {system_axi_bram_ctrl_0_bram_0 system_processing_system7_0_0 system_axi_gpio_0_0 system_processing_system7_0_axi_periph_0 system_rst_processing_system7_0_100M_0 system_axi_gpio_0_1 system_axi_bram_ctrl_0_0}]
+file copy -force D:/lab4/lab4.runs/impl_1/ D:/lab4/lab4.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/lab4/lab4.sdk -hwspec D:/lab4/lab4.sdk/system_wrapper.hdf

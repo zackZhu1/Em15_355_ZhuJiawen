@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:30:22 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sun Jun 28 20:19:06 2015
+# Process ID: 2732
+# Log file: F:/gitbox1/lab3_new/vivado.log
+# Journal file: F:/gitbox1/lab3_new\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:\gitbox1\lab3_new\lab3_new.xpr}
+report_ip_status -name ip_status 

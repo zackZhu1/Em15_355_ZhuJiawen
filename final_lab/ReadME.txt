@@ -1,0 +1,2 @@
+final3文件夹存放sdk包
+xilinx3文件夹存放Vivado包

@@ -1,0 +1,238 @@
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xutil.h"
+#include<stdio.h>
+
+//====================================================
+
+
+XGpio led[4];
+int i;
+
+void changeState(int x) {
+	for (i=0;i<4;i++) {
+		if (i==x)
+			XGpio_DiscreteWrite(&led[i],1,0xffffffff);
+		else
+			XGpio_DiscreteWrite(&led[i],1,0x00000000);
+	}
+}
+void set(int x){
+	for (i=0;i<4;i++)
+		XGpio_DiscreteWrite(&led[i],1,x);
+}
+
+int main (void) {
+
+	XGpio buttons;
+	int psb_check;//button的返回值
+
+    xil_printf("-- Start of the Program --\r\n");
+
+	XGpio_Initialize(&led[0],XPAR_LED1_DEVICE_ID);
+	XGpio_SetDataDirection(&led[0],1,0x00000000);//0是输出
+	XGpio_Initialize(&led[1],XPAR_LED2_DEVICE_ID);
+	XGpio_SetDataDirection(&led[1],1,0x00000000);//0是输出
+	XGpio_Initialize(&led[2],XPAR_LED3_DEVICE_ID);
+	XGpio_SetDataDirection(&led[2],1,0x00000000);//0是输出
+	XGpio_Initialize(&led[3],XPAR_LED4_DEVICE_ID);
+	XGpio_SetDataDirection(&led[3],1,0x00000000);//0是输出
+
+	XGpio_Initialize(&buttons, XPAR_BTNS_4BIT_DEVICE_ID);
+	XGpio_SetDataDirection(&buttons, 1, 0xffffffff);//1是输入
+
+
+
+	int rValue;
+	int success = 0;
+	success=1;
+	while(success == 1){
+		for (i=0; i<49999999; i++);
+		rValue=rand()%4;
+		changeState(rValue);
+		psb_check = XGpio_DiscreteRead(&buttons,1);
+		while(psb_check==0)
+			psb_check=XGpio_DiscreteRead(&buttons,1);
+		set(success=psb_check==(1<<rValue)?0x00000000:0xffffffff);
+		/*
+		success=psb_check==(1<<rValue)
+		if (psb_check==(1<<rValue)) {
+			xil_printf("successfully fucked lgm \n");
+			success=1;
+			set(0x00000000);
+		}
+		else {
+			success=0;
+			set(0xffffffff);
+		}
+		*/
+	}
+	return 0;
+
+	//游戏一复杂代码
+	/*
+	 * XGpio led1,led2,led3,led4;
+		XGpio buttons;
+		int i;
+		int psb_check;//button的返回值
+
+	    xil_printf("-- Start of the Program --\r\n");
+
+		XGpio_Initialize(&led1,XPAR_LED1_DEVICE_ID);
+		XGpio_SetDataDirection(&led1,1,0x00000000);//0是输出
+		XGpio_Initialize(&led2,XPAR_LED2_DEVICE_ID);
+		XGpio_SetDataDirection(&led2,1,0x00000000);//0是输出
+		XGpio_Initialize(&led3,XPAR_LED3_DEVICE_ID);
+		XGpio_SetDataDirection(&led3,1,0x00000000);//0是输出
+		XGpio_Initialize(&led4,XPAR_LED4_DEVICE_ID);
+		XGpio_SetDataDirection(&led4,1,0x00000000);//0是输出
+
+		XGpio_Initialize(&buttons, XPAR_BTNS_4BIT_DEVICE_ID);
+		XGpio_SetDataDirection(&buttons, 1, 0xffffffff);//1是输入
+
+
+
+
+		//测试
+		//int myrand[5]={0,1,2,3,4};
+		int rValue;
+		int success = 0;
+		success=1;
+		while(success != 0)//按对了才继续
+		{
+			//rValue = myrand[rand()%5];//产生1到4
+			for (i=0; i<49999999; i++);
+			rValue=rand()%4;
+			if(rValue == 0)
+			{
+				//灯亮
+				xil_printf("rValue %d\r\n",rValue);
+				XGpio_DiscreteWrite(&led1,1,0xffffffff);
+				XGpio_DiscreteWrite(&led2,1,0x00000000);
+				XGpio_DiscreteWrite(&led3,1,0x00000000);
+				XGpio_DiscreteWrite(&led4,1,0x00000000);
+
+				//开始按按钮
+				psb_check = XGpio_DiscreteRead(&buttons,1);
+				while(psb_check==0)
+					psb_check=XGpio_DiscreteRead(&buttons,1);
+				if(psb_check==1)
+				{
+					xil_printf("successfully fucked lgm \n");
+					success=1;
+					XGpio_DiscreteWrite(&led1,1,0x00000000);
+					XGpio_DiscreteWrite(&led2,1,0x00000000);
+					XGpio_DiscreteWrite(&led3,1,0x00000000);
+					XGpio_DiscreteWrite(&led4,1,0x00000000);
+				}
+				else
+				{
+					xil_printf("wwx ba chu lai le \n");
+					success=0;
+					XGpio_DiscreteWrite(&led1,1,0xffffffff);
+					XGpio_DiscreteWrite(&led2,1,0xffffffff);
+					XGpio_DiscreteWrite(&led3,1,0xffffffff);
+					XGpio_DiscreteWrite(&led4,1,0xffffffff);
+				}
+			}
+			else if(rValue == 1)
+			{
+				//灯亮
+				xil_printf("rValue %x\r\n",rValue);
+				XGpio_DiscreteWrite(&led1,1,0x00000000);
+				XGpio_DiscreteWrite(&led2,1,0xffffffff);
+				XGpio_DiscreteWrite(&led3,1,0x00000000);
+				XGpio_DiscreteWrite(&led4,1,0x00000000);
+
+				//开始按按钮
+				psb_check = XGpio_DiscreteRead(&buttons,1);
+				while(psb_check==0)
+					psb_check=XGpio_DiscreteRead(&buttons,1);
+				if(psb_check==2)
+				{
+					xil_printf("successfully fucked lgm \n");
+					success=1;
+					XGpio_DiscreteWrite(&led1,1,0x00000000);
+					XGpio_DiscreteWrite(&led2,1,0x00000000);
+					XGpio_DiscreteWrite(&led3,1,0x00000000);
+					XGpio_DiscreteWrite(&led4,1,0x00000000);
+				}
+				else
+				{
+					xil_printf("wwx ba chu lai le \n");
+					success=0;
+					XGpio_DiscreteWrite(&led1,1,0xffffffff);
+					XGpio_DiscreteWrite(&led2,1,0xffffffff);
+					XGpio_DiscreteWrite(&led3,1,0xffffffff);
+					XGpio_DiscreteWrite(&led4,1,0xffffffff);
+				}
+			}
+			else if(rValue == 2)
+			{
+				//灯亮
+				xil_printf("rValue %d\r\n",rValue);
+				XGpio_DiscreteWrite(&led1,1,0x00000000);
+				XGpio_DiscreteWrite(&led2,1,0x00000000);
+				XGpio_DiscreteWrite(&led3,1,0xffffffff);
+				XGpio_DiscreteWrite(&led4,1,0x00000000);
+
+				//开始按按钮
+				psb_check = XGpio_DiscreteRead(&buttons,1);
+				while(psb_check==0)
+					psb_check=XGpio_DiscreteRead(&buttons,1);
+				if(psb_check==4)
+				{
+					xil_printf("successfully fucked lgm \n");
+					success=1;
+					XGpio_DiscreteWrite(&led1,1,0x00000000);
+					XGpio_DiscreteWrite(&led2,1,0x00000000);
+					XGpio_DiscreteWrite(&led3,1,0x00000000);
+					XGpio_DiscreteWrite(&led4,1,0x00000000);
+				}
+				else
+				{
+					xil_printf("wwx ba chu lai le \n");
+					success=0;
+					XGpio_DiscreteWrite(&led1,1,0xffffffff);
+					XGpio_DiscreteWrite(&led2,1,0xffffffff);
+					XGpio_DiscreteWrite(&led3,1,0xffffffff);
+					XGpio_DiscreteWrite(&led4,1,0xffffffff);
+				}
+			}
+			else if(rValue == 3)
+			{
+				//灯亮
+				xil_printf("rValue %x\r\n",rValue);
+				XGpio_DiscreteWrite(&led1,1,0x00000000);
+				XGpio_DiscreteWrite(&led2,1,0x00000000);
+				XGpio_DiscreteWrite(&led3,1,0x00000000);
+				XGpio_DiscreteWrite(&led4,1,0xffffffff);
+
+				//开始按按钮
+				psb_check = XGpio_DiscreteRead(&buttons,1);
+				while(psb_check==0)
+					psb_check = XGpio_DiscreteRead(&buttons,1);
+				if(psb_check==8)
+				{
+					xil_printf("successfully fucked lgm \n");
+					success=1;
+					XGpio_DiscreteWrite(&led1,1,0x00000000);
+					XGpio_DiscreteWrite(&led2,1,0x00000000);
+					XGpio_DiscreteWrite(&led3,1,0x00000000);
+					XGpio_DiscreteWrite(&led4,1,0x00000000);
+				}
+				else
+				{
+					xil_printf("wwx ba chu lai le \n");
+					success=0;
+					XGpio_DiscreteWrite(&led1,1,0xffffffff);
+					XGpio_DiscreteWrite(&led2,1,0xffffffff);
+					XGpio_DiscreteWrite(&led3,1,0xffffffff);
+					XGpio_DiscreteWrite(&led4,1,0xffffffff);
+				}
+			}
+
+		}
+	 */
+
+}
